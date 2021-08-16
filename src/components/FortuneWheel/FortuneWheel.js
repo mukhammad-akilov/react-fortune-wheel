@@ -33,15 +33,13 @@ const FortuneWheel = ({rightRound, rightGift, giftsList, ...props}) => {
         const wheelProgress = calcWheelSpeed();
 
         if(wheelProgress <= 25) {
-            timer = 200;
+            timer = 300;
         } else if (wheelProgress <= 50) {
-            timer = 250;
+            timer = 150;
         } else if (wheelProgress <= 75) {
-            timer = 320;
-        } else if (wheelProgress <= 100) {
-            timer = 450;
-        }  else if (wheelProgress <= 90) {
-            timer = 800;
+            timer = 100;
+        } else if (wheelProgress <= 95) {
+            timer = 200;
         }
 
         console.log("Progress", wheelProgress, "Speed", timer);
